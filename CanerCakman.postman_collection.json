@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "c39cad83-6caf-46ec-a862-aaa1d8f651bb",
+		"name": "CanerCakman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39617447"
+	},
+	"item": [
+		{
+			"name": "UserTests",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\": 687985,\r\n            \"username\": \"canercakman\",\r\n            \"firstName\": \"cakman\",\r\n            \"lastName\": \"caner\",\r\n            \"email\": \"caner1995_35@hotmail.com\",\r\n            \"password\": \"Mardin4747.\",\r\n            \"phone\": \"5444583547\",\r\n            \"userStatus\": 0\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\": 24985,\r\n            \"username\": \"canercakman2delete\",\r\n            \"firstName\": \"caner\",\r\n            \"lastName\": \"cakman\",\r\n            \"email\": \"caner1995_35@hotmail.com\",\r\n            \"password\": \"Mardin4747.\",\r\n            \"phone\": \"5444583547\",\r\n            \"userStatus\": 0\r\n          }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/canercakman",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"canercakman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUSer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/canercakman2delete",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"canercakman2delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/canercakman2delete",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"canercakman2delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
